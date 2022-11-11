@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  user-select: none;
+}
+
+.grid {    
+  width: calc(100vmin - 40px);
+  height: calc(100vmin - 40px);
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+}
+  
+.grid div {
+  width: 5%;
+  height: 5%;
+}
+  
+.snake {
+  background: green;
+  z-index: 3;
+}
+  
+.apple {
+  background: red;
+  z-index: 2;
+}
+
+.button {
+  position: absolute;
+  bottom: 20vmin;
+  font-size: 6vmin;
+  z-index: 4;
+  background: lightgray;
+  padding: 1vmin;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: gray;
+}
+
+.points {
+  position: absolute;
+  font-size: 40vmin;
+  opacity: 0.2;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
